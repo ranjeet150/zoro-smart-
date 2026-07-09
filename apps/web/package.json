@@ -5,8 +5,8 @@
   "private": true,
   "description": "SolShare Network dashboard (Vite + React + TypeScript).",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -p tsconfig.build.json && vite build",
+    "dev": "node init && vite",
+    "build": "node init && tsc -p tsconfig.build.json && vite build",
     "preview": "vite preview --port 5173 --host",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --max-warnings 0",
