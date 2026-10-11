@@ -15,8 +15,8 @@
     "./soroban": "./src/soroban.ts"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
-    "dev": "tsc --watch",
+    "build": "node init && tsc -p tsconfig.build.json",
+    "dev": "node init && tsc --watch",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --max-warnings 0",
     "test": "vitest run"

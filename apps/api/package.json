@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "type": "module",
   "private": true,
-  "description": "SolShare Network HTTP/WS gateway — exposes REST indexing endpoints, live SSE streams, and bridges signers to the cross-chain relayer.",
+  "description": "SolShare Network HTTP/WS gateway \u2014 exposes REST indexing endpoints, live SSE streams, and bridges signers to the cross-chain relayer.",
   "main": "./src/index.ts",
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
-    "dev": "tsx watch src/index.ts",
-    "start": "node dist/index.js",
+    "build": "node init && tsc -p tsconfig.build.json",
+    "dev": "node init && tsx watch src/index.ts",
+    "start": "node init && node dist/index.js",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --max-warnings 0",
     "test": "vitest run"

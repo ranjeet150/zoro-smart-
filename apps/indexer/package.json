@@ -6,9 +6,9 @@
   "description": "Background worker that polls Soroban RPC `getEvents`, persists events into Postgres, and re-emits via Redis pub/sub.",
   "main": "./src/index.ts",
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
-    "dev": "tsx watch src/index.ts",
-    "start": "node dist/index.js",
+    "build": "node init && tsc -p tsconfig.build.json",
+    "dev": "node init && tsx watch src/index.ts",
+    "start": "node init && node dist/index.js",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --max-warnings 0",
     "test": "vitest run",

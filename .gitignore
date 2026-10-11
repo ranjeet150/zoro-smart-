@@ -42,16 +42,11 @@ contracts/target/
 contracts/*/test_snapshots/
 
 # ==================== Environment ====================
-.env
-.env.local
 .env.*.local
-.env.development
-.env.production
 !.env.example
 
 # ==================== Editor / OS ====================
 .idea/
-.vscode/*
 !.vscode/settings.json.example
 !.vscode/extensions.json
 *.swp
@@ -83,3 +78,4 @@ test-results/
 *.tgz
 *.tar.gz
 .history/
+config.bat
